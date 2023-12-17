@@ -14,12 +14,14 @@ function Cards() {
                             text="Explore this affordable housing map"
                             label="Map"
                             path="/map"
+                            alt="Map"
                         />
                         <CardItem
                             src="images/img-2.jpg"
                             text="This link to Blog"
                             label="Adventure"
                             path="/blog"
+                            alt="Travel"
                         />
                     </ul>
                     <ul className='cards__items'>
@@ -28,12 +30,14 @@ function Cards() {
                             text="This link to Contact"
                             label="SomethingElse"
                             path="/contact"
+                            alt="Travel"
                         />
                         <CardItem
                             src="images/img-8.jpg"
                             text="This link to Sign Up"
                             label="Other"
                             path="/sign-up"
+                            alt="Travel"
                         />
                     </ul>
                 </div>

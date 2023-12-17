@@ -10,20 +10,24 @@ import SignUp from './pages/SignUp';
 import Map from './pages/Map';
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <App/>,
+  // },
   {
-    path: "/",
+    path: "/my-app/",
     element: <App/>,
   },
   {
-    path: "/blog",
+    path: "/my-app/blog",
     element: <Blog/>,
   },
   {
-    path: "/contact",
+    path: "/my-app/contact",
     element: <Contact/>,
   },
   {
-    path: "/sign-up",
+    path: "/my-app/sign-up",
     element: <SignUp/>,
   },
   {

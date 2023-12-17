@@ -6,7 +6,6 @@ function Blog() {
   return (
     <div>
       <Navbar/>
-      <span>Hi</span>
         <h1 className='blog'>Blog</h1>
     </div>
   )

@@ -30,17 +30,17 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className='navbar-container'>
-        <Link to ='/' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to ='/my-app/' className='navbar-logo' onClick={closeMobileMenu}>
           Casey's
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li><Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link></li>
-          <li><Link to='/blog' className='nav-links' onClick={closeMobileMenu}>Blog</Link></li>
-          <li><Link to='/contact' className='nav-links' onClick={closeMobileMenu}>Contact</Link></li>
-          <li><Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>Sign Up</Link></li>
+          <li><Link to='/my-app/' className='nav-links' onClick={closeMobileMenu}>Home</Link></li>
+          <li><Link to='/my-app/blog' className='nav-links' onClick={closeMobileMenu}>Blog</Link></li>
+          <li><Link to='/my-app/contact' className='nav-links' onClick={closeMobileMenu}>Contact</Link></li>
+          <li><Link to='/my-app/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>Sign Up</Link></li>
         </ul>
         {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
       </div>
