@@ -5,7 +5,7 @@ import './Cards.css';
 function Cards() {
     return (
         <div className='cards'>
-            <h1>Check out these destinations</h1>
+            <h1>Check out these!</h1>
             <div className='cards__container'>
                 <div className='cards__wrapper'>
                     <ul className='cards__items'>
@@ -13,30 +13,30 @@ function Cards() {
                             src="images/Map.png"
                             text="Explore this affordable housing map"
                             label="Map"
-                            path="/map"
+                            path="/my-app/map"
                             alt="Map"
                         />
                         <CardItem
-                            src="images/img-2.jpg"
-                            text="This link to Blog"
-                            label="Adventure"
-                            path="/blog"
-                            alt="Travel"
+                            src="images/CL.JPG"
+                            text="This link to Blog 1"
+                            label="Cityscape"
+                            path="/my-app/blog"
+                            alt="Blog"
                         />
                     </ul>
                     <ul className='cards__items'>
                         <CardItem
-                            src="images/img-1.jpg"
+                            src="images/img-1.JPG"
                             text="This link to Contact"
-                            label="SomethingElse"
-                            path="/contact"
-                            alt="Travel"
+                            label="Landscape"
+                            path="/my-app/contact"
+                            alt="Landscape"
                         />
                         <CardItem
-                            src="images/img-8.jpg"
+                            src="images/img-8.JPG"
                             text="This link to Sign Up"
                             label="Other"
-                            path="/sign-up"
+                            path="/my-app/sign-up"
                             alt="Travel"
                         />
                     </ul>

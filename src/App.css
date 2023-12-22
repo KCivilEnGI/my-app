@@ -6,7 +6,9 @@
 }
 
 .home,
+.about,
 .blog,
+.blog2,
 .contact,
 .sign-up {
     display: flex;
@@ -16,8 +18,26 @@
     font-size: 3rem;
 }
 
+.about {
+    background-image: url('../public/images/goose.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
 .blog {
-    background-image: url('../public/images/img-2.jpg');
+    background-image: url('../public/images/CL.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
+.blog2 {
+    background-image: url('../public/images/CelebrationCake.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,7 +46,7 @@
 }
 
 .contact {
-    background-image: url('../public/images/img-1.jpg');
+    background-image: url('../public/images/img-1.JPG');
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -35,7 +55,7 @@
 }
 
 .sign-up {
-    background-image: url('../public/images/img-8.jpg');
+    background-image: url('../public/images/img-8.JPG');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,6 +66,7 @@
 /* Sizing of map container */
 .leaflet-container{
     height: 90vh;
+    margin: 20px 20px;
   }
   
   .cluster-icon {

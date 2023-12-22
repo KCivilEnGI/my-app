@@ -1,0 +1,20 @@
+import React, {useEffect} from 'react';
+import '../App.css';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
+function Blog2() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
+  return (
+    <div>
+      <Navbar />
+      <h1 className='blog2'>Blog 2</h1>
+      <Footer />
+    </div>
+  )
+}
+
+export default Blog2

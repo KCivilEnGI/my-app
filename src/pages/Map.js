@@ -1,9 +1,11 @@
+import React, {useEffect} from 'react';
 import "leaflet/dist/leaflet.css"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon, Point, divIcon } from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import { houses } from "../data/houses";
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer';
 
 const Map = () => {
     const customIcon = new Icon(
@@ -12,12 +14,17 @@ const Map = () => {
             iconUrl: require("../img/home-button.png"),
             iconSize: [38, 38] //size of the icon
         }
-    )
+    );
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      });
+    
     return (
         <div>
             <Navbar/>
             <MapContainer center={[43.07, -89.40]} zoom={13}>
-            <h2 style={{ fontSize:"25px",position:"relative", top:"0",left:"6vh",color:"white", backgroundColor: "transparent", zIndex:999}}>This map shows the affordable housing in Madison, WI area.</h2>
+            <h2 style={{ fontSize:"25px",position:"relative", top:"0",left:"8vh",color:"white", backgroundColor: "transparent", zIndex:999}}>This map shows the affordable housing in Madison, WI area.</h2>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
                     url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png  "
@@ -39,6 +46,7 @@ const Map = () => {
                     ))}
                 </MarkerClusterGroup>
             </MapContainer>
+            <Footer/>
         </div>
     );
 }

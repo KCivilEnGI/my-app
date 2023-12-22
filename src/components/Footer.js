@@ -8,10 +8,10 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join the newsletter to receive our best deals.
+                    Join out community to get the latest information
                 </p>
                 <p className='footer-subscription-text'>
-                    You can unsubscribe at any time.
+                    You can unsubscribe at any time
                 </p>
                 <div className='input-areas'>
                     <form>
@@ -23,41 +23,44 @@ function Footer() {
             <div className='footer-links'>
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'>How it works</Link>
-                        <Link to='/'>How it works</Link>
-                        <Link to='/'>How it works</Link>
+                        <h2>Contact</h2>
+                        <Link to='https://www.linkedin.com/in/k-c-cheng/' target='_blank'><i class="fa-brands fa-linkedin" style={{color:"#0080ff"}}/>&nbsp;LinkedIn</Link>
+                        <Link to='https://github.com/KCivilEnGI' target='_blank'><i className='fa fa-github'/>&nbsp;GitHub</Link>
                     </div>
-                    <div className='footer-link-items'>
-                        <h2>Contact Us</h2>
-                        <Link to='/contact'>Something else</Link>
-                        <Link to='/'>Something else</Link>
-                        <Link to='/'>Something else</Link>
-                    </div>
-                </div>
-                <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>Video</h2>
-                        <Link to='/'>YouTube</Link>
-                        <Link to='/'>Twitch</Link>
+                        <Link to='https://www.youtube.com/' target='_blank'><i className='fa-brands fa-youtube' style={{color:"#ff0000"}}/>&nbsp;YouTube</Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>
-                        <Link to='/'>Facebook</Link>
-                        <Link to='/'>Instagram</Link>
+                        <Link style={{color:"#a8a8a8", display:'flex', justifyContent:'center'}}>coming soon</Link>
                     </div>
                 </div>
+                {/* <div className='footer-link-wrapper'>
+                    <div className='footer-link-items'>
+                        <h2>Video</h2>
+                        <Link style={{color:"#a8a8a8"}}>coming soon</Link>
+                        <Link to='https://www.youtube.com/' target='_blank'>YouTube</Link>
+                        <Link to='https://www.twitch.tv/' target='_blank'>TwitchTV</Link>
+                    </div>
+                    <div className='footer-link-items'>
+                        <h2>Social Media</h2>
+                        <Link to='https://www.facebook.com/' target='_blank'>Facebook</Link>
+                        <Link to='https://www.instagram.com/'target='_blank'>Instagram</Link>
+                        <Link to='https://www.linkedin.com/'target='_blank'>LinkedIn</Link>
+                    </div>
+                </div> */}
             </div>
             <section className='social-media'>
                 <div className='social-media-wrap'>
-                    <div className='footer-logo'>
-                        <Link to='/' className='social-logo'>
+                    {/* <div className='footer-logo'>
+                        <Link to='/my-app/' className='social-logo'>
                             Casey's 
-                            {/* <i className='fab fa-typo3' /> */}
                         </Link>
-                    </div>
+                    </div> */}
+                    <small className='website-rights'>kc.goomail@gmail.com</small>
                     <small className='website-rights'>Casey's @ 2023</small>
-                    <div className='social-icons'>
+                    {/* <div className='social-icons'>
                         <Link className='social-icon-link facebook' to="/" target='_blank' aria-label='Facebook'>
                             <i className='fab fa-facebook-f' />
                         </Link>
@@ -67,7 +70,7 @@ function Footer() {
                         <Link className='social-icon-link linkedin' to="/" target='_blank' aria-label='LinkedIn'>
                             <i className='fab fa-linkedin' />
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </div>
